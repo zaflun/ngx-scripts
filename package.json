@@ -1,0 +1,70 @@
+{
+  "name": "@zaflun/ngx-scripts",
+  "version": "1.0.0",
+  "description": "Support scripts for angular projects",
+  "repository": "zaflun/ngx-scripts",
+  "main": "index.js",
+  "bin": {
+    "ngx-scripts": "./bin/ngx-scripts"
+  },
+  "scripts": {
+    "lint": "xo \"*.js\" \"bin/*.js\"",
+    "lint:fix": "npm run lint -s -- --fix",
+    "test": "npm run lint -s",
+    "release:check": "semantic-release --dry-run"
+  },
+  "keywords": [
+    "ngx",
+    "angular",
+    "cli",
+    "enterprise",
+    "tool",
+    "support",
+    "scripts",
+    "project"
+  ],
+  "author": {
+    "name": "zaflun UG <opensource@withzaflun.com>",
+    "url": "https://opensource.withzaflun.com"
+  },
+  "license": "MIT",
+  "homepage": "https://opensource.withzaflun.com/package/npm/ngx-scripts",
+  "bugs": {
+    "url": "https://github.com/zaflun/ngx-scripts/issues"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.0.1",
+    "lodash.get": "^4.4.2",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "@zaflun/semantic-release": "^1.0.4",
+    "semantic-release": "^17.4.2",
+    "xo": "^0.38.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "xo": {
+    "space": true,
+    "prettier": true,
+    "rules": {
+      "unicorn/no-array-reduce": "off"
+    }
+  },
+  "release": {
+    "extends": "@zaflun/semantic-release",
+    "branches": [
+      "main",
+      "next"
+    ]
+  },
+  "files": [
+    "index.js",
+    "bin"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
