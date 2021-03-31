@@ -1,6 +1,6 @@
 {
   "name": "@zaflun/ngx-scripts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Support scripts for angular projects",
   "repository": "zaflun/ngx-scripts",
   "main": "index.js",
