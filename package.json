@@ -41,7 +41,7 @@
   "devDependencies": {
     "@zaflun/semantic-release": "^1.0.4",
     "semantic-release": "^17.4.2",
-    "xo": "^0.39.1"
+    "xo": "^0.40.3"
   },
   "engines": {
     "node": ">=10.0.0"
